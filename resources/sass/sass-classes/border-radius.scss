@@ -1,0 +1,38 @@
+       
+        //================ BORDER RADIUS PROPERTY ================================
+
+
+    // generate BORDER-RADIUS ( 1 to 50 pixels)
+
+      @for $i from 1 through 50 {
+          .br-#{$i} { border-radius: 1px * $i; }
+      }
+      
+      // // generate BORDER-LEFT-TOP-RADIUS ( 1 to 50 pixels)
+
+      @for $i from 1 through 50 {
+          .bltr-#{$i} { border-radius: 1px * $i 0 0 0 ; }
+      }
+      
+      
+       // generate BORDER-RIGHT-TOP-RADIUS ( 1 to 50 pixels)
+
+      @for $i from 1 through 50 {
+          .brtr-#{$i} { border-radius: 0 1px * $i  0 0 ; }
+      }
+      
+         // generate BORDER-RIGHT-BOTTOM-RADIUS ( 1 to 50 pixels)
+
+      @for $i from 1 through 50 {
+          .brbr-#{$i} { border-radius: 0 0 1px * $i  0 ; }
+      }
+      
+               // generate BORDER-LEFT-BOTTOM-RADIUS ( 1 to 50 pixels)
+
+      @for $i from 1 through 50 {
+          .blbr-#{$i} { border-radius: 0 0 0 1px * $i ; }
+      }
+      
+      
+
+ 

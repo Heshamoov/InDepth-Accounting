@@ -1,0 +1,35 @@
+
+ //================ COLORS PROPERTY ================================
+
+      $colors: ( 
+      
+      'aliceblue','black', 'white', 'red', 'green', 'blue','orange',
+      'coral','purple','silver','grey','maroon','yellow','olive','lime',
+      'aqua','teal','navy','indianred','lightcoral','salmon','firebrick',
+      'pink','lightpink','lightsalmon','tomato','orangered','darkorange',
+      'gold','lavender','slateblue','darkslateblue','indigo','rebeccapurple',
+      'palegreen','brown'
+      );
+
+		@for $i from 0 to length($colors) {
+			$thisColor: unquote(nth($colors, $i+1));
+			.#{$thisColor} {
+				color: $thisColor;
+			}
+		}
+		
+		//================ BACKGROUND COLORS PROPERTY ================================  
+
+             // ==== OUTPUT EXAMPLE =======
+			    	// .bg-grey {
+			  	 //      background: grey;
+			  	//    }
+
+           // ==========================			
+		
+		  @for $i from 0 to length($colors) {
+			$thisColor: unquote(nth($colors, $i+1));
+			 .bg-#{$thisColor} {
+			 	background: $thisColor!important;
+			   }
+		   }

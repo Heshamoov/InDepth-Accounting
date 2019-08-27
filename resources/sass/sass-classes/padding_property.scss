@@ -1,0 +1,51 @@
+
+
+//================ PADDING PROPERTY ============================
+
+
+
+// generate padding  In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .p-#{$i} { padding: 1px * $i; }
+    }
+
+//=============================================================
+
+
+
+
+// generate padding-top property In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .pt-#{$i} { padding-top: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate padding-right property In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .pr-#{$i} { padding-right: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate padding-bottom property In  (0 to 20 pixels)
+    
+    @for $i from 0 through 20 {
+      .pb-#{$i} { padding-bottom: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate padding-left property In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .pl-#{$i} { padding-left: 1px * $i; }
+    }
+
+//=============================================================

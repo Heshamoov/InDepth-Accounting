@@ -1,0 +1,10 @@
+  
+  
+  //================ FONT SIZE PROPERTY ================================
+
+
+    // generate font size  ( 10 to 30 pixels)
+
+      @for $i from 10 through 30 {
+          .fs-#{$i} { font-size: 1px * $i; }
+      }

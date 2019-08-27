@@ -1,0 +1,610 @@
+
+    $title:#009688;
+    $sub-title: #737373;
+    .totalAmount{
+      background: rgba(255, 255, 255, 0.34901960784313724);
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 16px;
+      strong{
+        color: #3c3c3c;
+      }
+    }
+    .totalAmountLast{
+      @extend .totalAmount;
+      background: #92D04F;
+
+    }
+    .regularTable{
+      thead{
+        tr{
+          &:nth-child(2){
+           th{
+             &:nth-child(1){
+               background-color: #B2A1C7;
+             }
+             &:nth-child(2){
+               background-color: #D99594;
+             }
+             &:nth-child(3){
+               background-color:#E5DFEC;
+             }
+             &:nth-child(4){
+               background-color:#FA1100;
+             }
+             &:nth-child(5){
+               background-color:#B87035;
+             }
+             &:nth-child(6){
+               background-color:#93D250;
+             }
+             &:nth-child(7){
+               background-color:#FCBF02;
+             }
+             &:nth-child(8){
+               background-color:#A5B6CA;
+             }
+             &:nth-child(9){
+               background-color:#B76F34;
+             }
+             &:nth-child(10){
+               background-color:#92D04F;
+             }
+             &:nth-child(11){
+               background-color:#fff;
+             }
+             &:nth-child(12){
+               background-color:#FFFF01;
+             }
+             &:nth-child(13){
+               background-color:#c0b8e4;
+             }
+           }
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+              &:nth-last-child(2){
+                  width: 180px;
+              }
+          }
+          &:nth-last-child(2){
+            background: #9c9c9c;
+            td{
+              &:nth-child(5){
+                 background:#B87035;
+              }
+              &:nth-child(6){
+                background:#92D14F;
+              }
+              &:nth-child(7){
+                background: #FCBF02;
+              }
+              &:nth-child(8){
+                background:#A5B6CA;
+              }
+              &:nth-child(9){
+                background:#B76F34;
+              }
+              &:nth-child(10){
+                background:#92D04F;
+              }
+              &:nth-child(11){
+                background:#fff;
+              }
+              &:nth-child(12){
+                background:#CCCCCC;
+              }
+              &:nth-child(13){
+                background:#C0B8E4;
+              }
+              &:nth-child(14){
+                background:#CCCCCC;
+              }
+              &:nth-child(15){
+                background:#CCCCCC;
+              }
+            }
+          }
+          td{
+            &:first-child {
+              background: #B2A1C7;
+            }
+            &:nth-child(3){
+              background-color:#E5DFEC;
+            }
+          }
+        }
+      }
+    }
+
+
+    .regularModal{
+      background: rgba(1, 8, 4, 0.741176);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      padding-top: 50px;
+      padding-left: 32px;
+      padding-right: 30px;
+      .modalHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            div.title{
+              flex: 1;
+            }
+        .cross{
+          width: 25px;
+          text-align: right;
+          color: red;
+          .fa{
+            background: #f7f7f7;
+            padding: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .tile{
+         background: rgba(255, 255, 255, 0.8509803921568627)!important;
+    }
+
+    .app-content{
+      background-image: linear-gradient(86deg, rgba(29, 216, 198, 0.3803921568627451) 0, rgba(16, 67, 82, 0.83) 100%), url(../images/e12ad8e5ad74caa87696386d0f1b2978.jpg)!important;
+      background-position: 12%;
+    }
+
+    @mixin iconGradient($deg,$first-color,$last-color){
+      background: linear-gradient($deg, $first-color, $last-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip:text;
+      -webkit-text-fill-color: transparent;
+      -moz-webkit-text-fill-color:transparent ;
+      -ms-webkit-text-fill-color:transparent ;
+      -o-webkit-text-fill-color: transparent;
+      -khtml-webkit-text-fill-color:transparent ;
+      webkit-text-fill-color:transparent ;
+    }
+
+    .accountsInfo{
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: rgba(253, 253, 253, 0.6784313725490196);
+      padding: 20px;
+      margin: 5px;
+      min-width: 280px;
+
+          div{
+            flex:1;
+            text-align: center;
+            i{
+              font-size: 4.3rem;
+              @include iconGradient(0deg, #009688 18%, #364e58 71%);
+            }
+          }
+    }
+
+
+      @-webkit-keyframes virtical_rotate {
+        from {    transform: rotateX(0deg);}
+        to {    transform: rotateX(360deg);}
+      }
+      .jer{
+        height: 30px;
+        background: transparent;
+        border-bottom: 4px double black;
+        text-align: center;
+        font-weight: bold;
+      }
+
+    .app-sidebar__toggle{
+        &:before{
+          content:''!important;
+        }
+    }
+
+    .cateTitle{
+      font-size: 16.8px;
+      color: #4C4F52;
+    }
+     .InputFormHeader{
+       background: #ffffff;
+       padding: 0.85rem 1.85rem;
+       margin-bottom: -2px;
+       border-bottom: 1px solid #e5e6e6;
+       font-size: 16.8px;
+       color: #4C4F52;
+       position: relative!important;
+       z-index: 1!important;
+       animation-name: virtical_rotate;
+       animation-duration: 1.3s;
+     }
+
+
+ .card-table{
+   &.card{
+     border: none;
+     background-color: rgba(255, 255, 255, 0.8) !important;
+   }
+ }
+ .treeview-item:hover{
+   background: #0D1214!important;
+ }
+ .treeview-item.active,  .treeview-item:focus {
+   background: #009688!important;
+ }
+
+ //print
+ @media print {
+
+
+         body * {
+           visibility: hidden;
+         }
+
+           #section-to-print {
+             .ledgerTable,.day-book{
+               thead,tbody{
+                 tr{
+                   th,td{
+                     &:last-child{
+                       display: block!important;
+                     }
+                   }
+                 }
+               }
+             }
+                   .totalAmount,.totalAmountLast{
+                     display: block!important;
+                   }
+
+                #tableTop{
+                  padding-top: 90px;
+                   display: block!important;
+                   visibility: visible!important;
+                }
+             .dataTable thead tr {
+               .regular-head-print{
+                 border-left: 0px solid transparent!important;
+               }
+             }
+           }
+
+         #section-to-print .ledger{
+               thead{
+                 tr{
+                   th{
+                    &:last-child{
+                      display: block!important;
+                      border-bottom: 1px solid  lightgrey;
+                    }
+                   }
+                 }
+               }
+           tbody{
+             tr{
+               td{
+                 border: 1px solid  lightgrey;
+                 &:last-child{
+                   display: block!important;
+                 }
+               }
+             }
+           }
+         }
+
+         #section-to-print, #section-to-print * {
+           visibility: visible;
+         }
+         #section-to-print {
+           position: absolute;
+           left: 0;
+           right:0;
+           top:-50px!important;
+         }
+         #tableTop{
+           display: block!important;
+           visibility: visible!important;
+         }
+         #section-to-print table tr th{
+           border: 1px solid #BABAB9;
+           &:last-child{
+             display: none;
+           }
+         }
+         #section-to-print table tr td{
+           border: 1px solid #BABAB9;
+
+           &:last-child{
+             display: none;
+           }
+         }
+       }
+ //==================new form ============================
+  .newForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      @media only screen and (max-width: 768px) {
+           flex-direction: column;
+      }
+      .formItems{
+        flex:1;
+        margin: 0 10px;
+      }
+
+  }
+
+//=======================profit and lose ========================================
+.report_title{
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: center;
+  padding: 23px 0;
+  line-height: 24.2px;
+  span{
+     font-size: 13px;
+     color:$sub-title;
+      &:nth-child(1){
+          font-weight:bold;
+          font-size: 22px;
+          color:$title;
+      }
+        i{
+          color: var(--blue);
+          cursor: pointer;
+          font-size: 16px;
+          transition: 0.3s all;
+          &:hover{
+            transform: translateY(-2px);
+          }
+        }
+  }
+}
+.profit_Table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  thead{
+    tr{
+      td{
+        font-weight: bold;
+        color: #565858;
+        font-size: 13px;
+        &:nth-child(3),&:nth-child(2){
+          width: 12%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  tbody{
+    tr{
+      td{
+        color: #4e4e4e;
+        &:nth-child(3),&:nth-child(2){
+          width: 12%;
+          text-align: right;
+        }
+      }
+    }
+  }
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+  tr:nth-child(even) {
+    background-color: rgba(221, 221, 221, 0.2901960784313726);
+  }
+}
+
+.help{
+  font-size: 13px;
+  padding-top: 4px;
+}
+.dropdown-toggle{
+  &:after{
+    content:'';
+    border:transparent!important;
+  }
+}
+  .v-select input[type=search], .v-select input[type=search]:focus{
+    min-height:27px;
+    max-height:27px;
+  }
+
+  .dataTable{
+      border: 1px solid #ecebeb;
+      font-size: 13px;
+      thead{
+          tr{
+             background: #cccccc;
+                th{
+                  border: 1px solid #eaeaea;
+                  text-align: center!important;
+                  outline:0;
+                        &:before, &:after{
+                          content:''!important;
+                        }
+                }
+          }
+   }
+             tr{
+                 td{
+                   padding: 0.45rem!important;
+                   border: 1px solid #eaeaea;
+                   .adjustAction{
+                     display: flex;
+                     justify-content: center;
+                   }
+                 }
+         }
+    .adjustAction{
+     a{
+        cursor:pointer;
+        font-size: 16px;
+        padding-right:8px;
+       &:last-child{
+         color: #e3342f;
+       }
+     }
+   }
+ }
+  .response_flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  }
+
+
+.footer{
+  &.table__footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+      .bottomAdjust{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+      .bottom_pagination{
+        .pagination{
+          .page-link{
+            padding: 0.2rem 0.35rem!important;
+          }
+        }
+        @media only screen and (max-width: 425px) {
+          transform: translateX(37%)  translateY(7px);
+         }
+    }
+  .dataTables_length{
+    select{
+      height: 27px;
+      width: 61px;
+    }
+  }
+  .dataTables_info{
+    padding: 3px 9px !important;
+    font-size: 11px;
+    background: #f5f5f5;
+    border-radius: 3px;
+  }
+}
+
+.headerIcon{
+  font-size: 20px;
+  padding-left: 12px;
+  color: rgb(17, 62, 74);
+       i{
+            transition: transform 0.2s ease-in;
+         &:hover{
+            transform: translateY(-1px);
+         }
+       }
+}
+ .search-container{
+   position: relative;
+         .searchIcon{
+           position: absolute;
+           top: 7px;
+           right: 1px;
+           background: white;
+           height: 24px;
+           width: 24px;
+           font-size: 19px;
+         }
+          input{
+           height: 35px;
+            border-radius: 3px;
+           border: 1px solid lightgrey;
+           padding-left: 5px;
+           position: relative;
+                 &:focus{
+                    outline:none;
+                 }
+         }
+          button{
+             height: 35px;
+             border: 1px solid #2929291c;
+             margin-left: -3px;
+             border-radius: 0 3px 3px 0;
+            padding-top: 0;
+            cursor: pointer;
+           }
+ }
+  //--------------------for login--------------------------------
+  .login-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: 0 50%;
+    background-image: linear-gradient(86deg, rgba(2, 24, 47, 0.7686274509803922) 0, rgba(37, 67, 97, 0.85) 100%),
+    url(../images/accounting.jpg);
+    background-repeat: no-repeat;
+    .login-box{
+      z-index: 1;
+    }
+  }
+  .register-content{
+    @extend .login-content;
+    background-image: linear-gradient(86deg, rgba(2, 24, 47, 0.7686274509803922) 0, rgba(37, 67, 97, 0.85) 100%),
+    url(../images/accounting.jpg);
+    .login-box{
+        min-height: 583px!important;
+    }
+  }
+  .app-title{
+    padding: 0 34px!important;
+  }
+
+ .treeview.is-expanded .treeview-menu {
+      max-height: 100%!important;
+    }
+.brand{
+  height: 50px;
+  width: 100%;
+      @media(max-width: 425px){
+        width: auto;
+      }
+}
+.upload-logo{
+  padding-bottom: 2.15rem !important;
+  -webkit-appearance: button-bevel;
+}

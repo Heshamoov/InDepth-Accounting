@@ -1,0 +1,48 @@
+
+
+//================ MARGIN PROPERTY ================================
+
+
+// generate margin  In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .m-#{$i} { margin: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate margin-top property In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .mt-#{$i} { margin-top: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate margin-right property In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .mr-#{$i} { margin-right: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate margin-bottom property In  (0 to 20 pixels)
+    
+    @for $i from 0 through 20 {
+      .mb-#{$i} { margin-bottom: 1px * $i; }
+    }
+
+//=============================================================
+
+
+// generate margin-left property In  (0 to 20 pixels)
+
+    @for $i from 0 through 20 {
+      .ml-#{$i} { margin-left: 1px * $i; }
+    }
+
+//=============================================================
